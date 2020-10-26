@@ -1,34 +1,67 @@
 body {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 header span {
-	padding: 25px 5px;
-	font-size: 1.5em;
+  padding: 25px 5px;
+  font-size: 1.5em;
+}
+
+header a {
+  color: #ccc;
+}
+
+header a:hover, header a:focus {
+  color: #fff;
+}
+
+a {
+  border-bottom: dotted 1px;
+  padding-bottom: 3px;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  border: none;
 }
 
 main {
+  margin-top: 65px;
+}
 
-	margin-top: 65px;
+main section {
+  margin-bottom: 65px;
 }
 
 main h1 {
-	margin-bottom: 35px;
+  margin-bottom: 35px;
+  font-size: 1.75em;
 }
 
 main h2 {
-	font-size: 2em;
-	margin-top: 65px;
-	margin-bottom: 35px;
+  font-size: 1.5em;
+  margin-bottom: 35px;
+  border-bottom: solid 1px #ccc;
+}
+
+.alert {
+  margin: 35px;
+}
+
+.alert p {
+  margin: 0;
+  padding: 0;
+  font-size: .6em;
 }
 
 footer {
-	padding-top: 15px;
-	padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-footer p, .alert p {
-	margin: 0;
-	padding: 0;
-	font-size: .6em;
+footer p {
+  margin: 0;
+  padding: 0;
+  font-size: .6em;
 }
+/*# sourceMappingURL=style.css.map */
