@@ -10,11 +10,16 @@ header span {
 main {
 
 	margin-top: 65px;
-
 }
 
 main h1 {
-	margin-bottom: 65px;
+	margin-bottom: 35px;
+}
+
+main h2 {
+	font-size: 2em;
+	margin-top: 65px;
+	margin-bottom: 35px;
 }
 
 footer {
