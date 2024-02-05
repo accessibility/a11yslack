@@ -43,6 +43,10 @@ main h2 {
   margin-bottom: 35px;
   border-bottom: solid 1px #ccc;
 }
+main h3 {
+  font-size: 1.25em;
+  margin: 25px 0;
+}
 
 .alert {
   margin: 35px;
