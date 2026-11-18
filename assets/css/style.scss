@@ -1,0 +1,67 @@
+--- 
+--- 
+
+// Headers
+$header-heading-color: #FFFFFF;
+$header-bg-color: #83388A;
+$header-bg-color-secondary: #83388A;
+
+// Text
+$section-headings-color: #83388A;
+$body-text-color: #222222;
+$body-link-color: #83388A;
+$blockquote-text-color: #3C5A60;
+
+// Code
+$code-bg-color: #F4FAF8;
+$code-text-color: #83388A;
+
+// Borders
+$border-color: #83388A;
+$table-border-color: #83388A;
+$hr-border-color: #83388A;
+
+
+@import "{{ site.theme }}";
+
+:focus {
+outline: 2px solid $blockquote-text-color;
+outline-offset: 2px;
+}
+
+header :focus {
+    outline-color: $code-bg-color;
+}
+
+.btn {
+    background-color: $blockquote-text-color;
+    color: #FFF;
+    border-color: $code-bg-color;
+
+    &:hover,
+    &:focus-visible {
+        color: $section-headings-color;
+        text-decoration: none;
+        color: $body-text-color;
+        background-color: $code-bg-color;
+        border-color: $blockquote-text-color;
+        border-style: dotted;
+    }
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+        list-style: none;
+    }
+}
+
+a#skip-to-content:focus {
+    color: $body-text-color;
+    background-color: $code-bg-color;
+}
