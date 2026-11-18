@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% if page.title == site.title %}
+    {{ page.title }}
+    {% else %}
+    {{ page.title }} | {{ site.title }}
+    {% endif %}
+  </title>
+  {% seo title=false %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+    type="text/css" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
+</head>
+
+<body>
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+  <header class="page-header">
+    <h1 class="project-name">{{ page.title }}</h1>
+    <img src="images/a11y-slack-logo.png" width="150px"
+      alt="" />
+    <h2 class="project-tagline">
+      {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    <nav aria-label="Main">
+      <ul>
+        <li>
+          <a href="{{ site.baseurl }}/" class="btn">Home</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}{% link code-of-conduct.md %}" class="btn">
+            Code of Conduct
+          </a>
+        </li>
+        <li>
+          <a href="https://accessibility.github.io/a11yslack/" class="btn">
+            GitHub Repo
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="content" class="main-content">
+    {{ content }}
+
+    <footer class="site-footer">
+      <p>Brought to you by people who care about making the web accessible - &copy; 2024</p>
+    </footer>
+  </main>
+</body>
+
+</html>

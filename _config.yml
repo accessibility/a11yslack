@@ -1,0 +1,5 @@
+title: A11Y (Accessibility) Slack Community
+description: A Slack community for digital accessibility practitioners - beginners welcome.
+remote_theme: pages-themes/cayman@v0.2.0 #Go to https://github.com/pages-themes for a list of default GH Pages themes
+plugins:
+- jekyll-remote-theme
